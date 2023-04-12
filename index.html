@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Convertor de divisas</title>
+</head>
+
+<body>
+    <header class="App-header">
+        <div class="encabezado">
+            <p>⮀ unit converter</p>
+        </div>
+    </header>
+    <div class="caja-convert">
+        <div class="titulo">
+                <p>convert</p>
+        </div>
+        <div class="cuerpo">
+            <select class="eleccion" id="eleccion">
+                <option value="km_miles">km → miles</option>
+                <option value="miles_km">miles → km</option>
+                <option value="ft_mts">feet → metres</option>
+                <option value="mts_ft">metres → feet</option>
+                <option value="cm_inches">cm → inches</option>
+                <option value="inches_cm">inches → cm</option>
+            </select>
+            <span class="invertir">⮀</span>
+            <input class="valor" id="valor" type="text" placeholder="enter value"></input>
+        </div>
+        <div class="resultados">
+            <span class="save" id="guardar">&#x2661;</span>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <section class="consultas">
+        <p>saved</p>
+        <div id="salvados"></div>
+    </section>
+    <footer class="App-footer">
+        <p>Terms of service</p>
+        <p>Privacy policy</p>
+    </footer>
+</body>
+
+</html>

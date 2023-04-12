@@ -1,0 +1,310 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Cabecera */
+.App-header {
+    background-color: rgb(255, 255, 255);
+    color: #2E0039;
+    height: 50px;
+    width: 100%;
+    margin-top: 0%;
+    box-shadow: 0 0 0 3px rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* Pie de página */
+.App-footer {
+    color: white;
+    background-color: #2E0039;
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.App-footer p {
+    margin-right: 40px;
+}
+
+.encabezado {
+    width: 715px;
+}
+
+
+.caja-convert {
+    width: 715px;
+    height: 200px;
+    background-color: #2E0039;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgb(185, 185, 185);
+}
+
+
+/* TIUTLO */
+
+.titulo {
+    flex: 1;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* CUERPO */
+
+.cuerpo {
+    position: relative;
+    flex: 1;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+select {
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2E0039;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.invertir {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+input {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 100px;
+    text-align: end;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* RESULTADOS */
+
+.resultados {
+    position: relative;
+    flex: 1;
+    margin-left: 25px;
+}
+
+.save {
+    color: white;
+    font-size: 25px;
+    background-color: #2E0039;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+#resultado {
+    width: 150px;
+    position: absolute;
+    border-bottom: 2px solid white;
+    right: 40px;
+    bottom: 30px;
+    justify-content: center;
+    margin-right: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* SAVED */
+
+.consultas {
+    width: 715px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 20px;
+    margin: 50px auto 0;
+}
+
+#salvados{
+    column-count: 2;
+}
+
+.consultas p {
+    margin-left: 25px;
+    margin-top: 50px;
+    font-family: Georgia, Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+}
+
+/* Estilos para dispositivos móviles */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+
+    /* Cabecera */
+
+    .App-header {
+        background-color: white;
+        color: #2E0039;
+        height: 50px;
+        width: 100%;
+        margin-top: 0%;
+        box-shadow: 0 0 0 3px rgb(211, 210, 210);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .App-header p {
+        margin: 15px;
+    }
+
+    .caja-convert {
+        width: 350px;
+        height: 210px;
+        background-color: #2E0039;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-left: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 5px rgb(185, 185, 185);
+    }
+
+    /* TIUTLO */
+
+    .titulo {
+        flex: 1;
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    /* CUERPO */
+
+    .cuerpo {
+        position: relative;
+        flex: 1;
+        margin-left: 15px;
+    }
+
+    select {
+        width: 250px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #2E0039;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .invertir {
+        color: white;
+        font-size: 20px;
+        background-color: transparent;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    input {
+        width: 250px;
+        color: white;
+        font-size: 20px;
+        background-color: transparent;
+        margin-left: 0px;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* RESULTADOS */
+
+    .resultados {
+        position: relative;
+        flex: 1;
+        margin-left: 15px;
+    }
+
+    .save {
+        color: white;
+        font-size: 25px;
+        background-color: #2E0039;
+        position: absolute;
+        bottom: 20px;
+        cursor: pointer;
+    }
+
+    #resultado {
+        width: 150px;
+        position: absolute;
+        border: none;
+        right: 60px;
+        bottom: 20px;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: end;
+        font-family: 'Roboto', sans-serif;
+    }
+
+/* SAVED */
+
+.consultas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+#salvados{
+    column-count: 1;
+
+}
+
+    .consultas p {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-family: Georgia, Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+    }
+
+}
